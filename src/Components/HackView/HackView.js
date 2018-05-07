@@ -13,10 +13,12 @@ class HackView extends React.Component {
     }
 
     render() {
+
+        const {data} = this.state
         return(
             <div>
                 {
-                    console.log(this.state.data)
+                    data && data.map()
                 }
             </div>
         )
